@@ -39,3 +39,7 @@ class EV extends Car {
         }
     }
 }
+
+const car1 = new EV("Tesla", 120, 23)
+
+//In console, enter car1.accelerate(); or car1.brake(); in order to test the car data provided and view calculations.

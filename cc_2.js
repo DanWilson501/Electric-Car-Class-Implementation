@@ -28,4 +28,14 @@ class EV extends Car {
         this.charge = chargeTo;
         console.log(`This ${this.make}'s battery charged to ${this.charge}%`);
     }
+
+    accelerate() {
+        if (this.charge > 0) {
+            this.speed += 20;
+            this.charge -= 1;
+            console.log(`The ${this.make} going at ${this.speed} km/h, with a charge of ${this.charge}%`);
+        } else {
+            console.log(`The ${this.make} can't accelerate, battery is empty!`);
+        }
+    }
 }
